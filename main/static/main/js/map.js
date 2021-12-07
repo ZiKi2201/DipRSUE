@@ -1,4 +1,3 @@
-
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map-canvas', {
             center: [47.216735, 39.703829],
