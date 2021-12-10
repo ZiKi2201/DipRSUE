@@ -17,9 +17,10 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
   -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
+
 }
 
-.templatemo_clear {
+.clear {
 	clear: both;
 }
 
@@ -27,31 +28,40 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	height: 30px;
 }
 
-.templatemo-top-bar {
+#email a {
+    color: #e67e22;
+}
+#phone a {
+    color: #e67e22;
+}
+
+
+.top-bar {
     min-height: 40px;
     background-color:#eeeeee;
 }
 
-.templatemo-top-menu {
+.top-menu {
     min-height:110px;
     background-color:#ffffff;
     z-index: 5000;
     width:100%;
+    box-shadow: 0px 0px 10px 3px #b7b7b7;
 }
 
-.templatemo-top-menu .navbar-toggle {
+.top-menu .navbar-toggle {
     margin-top: 38px;
 }
 
-.templatemo-top-menu .navbar-brand {
+.top-menu .navbar-brand {
     padding: 0;
     margin: 30px 0 0 0;
 }
 
-/* ------ Carousel ----- */
+/* ------ greeting ----- */
 
-#templatemo-carousel {
-    background: url('../images/templatemo_carousel_bg.jpg') no-repeat center center fixed;
+#greeting {
+    background: url('../images/buhgalteria.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -61,14 +71,14 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     height: 500px;
 }
 
-#templatemo-carousel .carousel-caption {
+#greeting .greeting-caption {
     z-index: 10;
 }
 
-#templatemo-carousel .item {
+#greeting .item {
     height: 500px;
 }
-#templatemo-carousel .carousel-inner > .item > img {
+#greeting .greeting-inner > .item > img {
     position: absolute;
     min-width: 100%;
     height: 500px;
@@ -77,28 +87,28 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 @media (min-width: 768px) {
-    #templatemo-carousel .carousel-caption p {
+    #greeting .greeting-caption p {
         margin-bottom: 20px;
         line-height: 1.4;
         font-size: 21px;
     }
 
-    #templatemo-carousel .carousel-caption {
-        padding-bottom: 140px;
+    #greeting .greeting-caption {
+        padding-bottom: 210px;
         right: 20%;
         left: 20%;
     }
 }
 
 @media (max-width: 768px) {
-    #templatemo-carousel .carousel-caption {
-        padding-bottom: 120px;
+    #greeting .greeting-caption {
+        padding-bottom: 210px;
     }
 }
 
 @media (max-width: 1024px) {
-    #templatemo-carousel {
-        background: url('../images/templatemo_carousel_bg_s.jpg') no-repeat center center;
+    #greeting {
+        background: url('../images/buhgalteria_bg_s.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -109,15 +119,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     }
 }
 
-/* ------ End of Carousel ----- */
+/* ------ End of greeting ----- */
 
 /* ------ Welcome & Slogna ------ */
-.templatemo-welcome {
+.welcome {
     border-bottom: 1px solid #cccccc;
     min-height: 230px;
 }
 
-.templatemo-slogan {
+.slogan {
     font-family:  'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 42px;
@@ -125,19 +135,19 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     color: #333333;
 }
 
-.templatemo-service {
+.service {
     margin-bottom: 100px;
     margin-top: 100px;
 }
 
-.templatemo-service-item {
+.service-item {
     font-family:  'Open Sans', sans-serif;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
 
-.templatemo-service-item p {
+.service-item p {
     font-weight: lighter;
     text-align: justify;
     margin-top: 25px;
@@ -218,14 +228,14 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-bottom: 0px;
 }
 
-.templatemo-service-item-header {
+.service-item-header {
     margin-left: -10px;
     padding: 16px 20px 20px;
     font-weight: bold;
     display: inline-block;
 }
 
-.templatemo-header-orange {
+.header-orange {
     background-color:#ff7600;
     min-width: 298px;
     height: 67px;
@@ -235,31 +245,32 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .team_hr {
     border: 1px solid #fff;
-    width: 39.5%;
+    width: 41.5%;
     float: left;
 }
 
 .team_hr_left {
-    margin-right: 30px;
+    margin-right: 20px;
     margin-left: 15px;
 }
 
 .team_hr_right {
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-right: 15px;
 }
 
 .hr_gray {
     border: 1px solid #cccccc;
 }
 
-.templatemo-team {
+.team {
     background: url('../images/background.png') ;
     font-family:  'Open Sans', sans-serif;
     min-height:590px;
     color:#ffffff;
 
 }
-.templatemo-line-header {
+.line-header {
     margin-top:100px;
     margin-bottom:80px;
 }
@@ -273,27 +284,20 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .member-thumb {
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 5px 5px 3px #7c7c7c;
 }
 
 .member-thumb .thumb-overlay {
     background-color: rgba(220, 157, 102, 0.8);
     position: absolute;
     visibility: hidden;
-    padding-top: 35%;
-    padding-left: 25%;
+    padding: 20% 5% 5% 5%;
     height: 100%;
     width: 100%;
     opacity: 0;
     right: 0;
     top: 0;
 }
-
-.thumb-overlay a {
-    float:left;
-    margin-right: 5px;
-}
-
-
 
 .team-inner {
     margin-top:10px;
@@ -308,6 +312,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .team-inner-subtext {
     font-weight:normal;
     font-size:12px;
+    top: 50%;
+        left: 50%;
 }
 
 .row_team {
@@ -319,7 +325,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     list-style: none;
 }
 
-.templatemo-project-box {
+.project-box {
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -328,7 +334,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     width: 200px;
 }
 
-.templatemo-project-box:hover .project-overlay {
+.project-box:hover .project-overlay {
     transition: all 0.3s ease-in-out 0s;
     visibility: visible;
     opacity: 1;
@@ -355,7 +361,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 }
 
-.templatemo-project-gallery li {
+.project-gallery li {
     margin:15px;
 }
 
@@ -372,7 +378,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     color:#929292;
 }
 
-.templatemo-line-header span {
+.line-header span {
     font-size: 18px;
     float :left;
     margin-top: 10px;
@@ -383,32 +389,31 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     padding-top: 100px;
 }
 
-.span_blog {
+.span_reviews {
     margin-bottom: 80px;
 }
 
-.blog_post {
+.reviews_post {
     color: #333333;
     padding: 10px;
 }
 
-.blog_header {
+.reviews_header {
     font-weight: bold;
     font-size: 16px;
 }
 
-.blog_text {
+.reviews_text {
     text-align: justify;
     font-size: 14px;
     margin-top: 20px;
 }
 
-#templatemo-contact {
+#contact {
 	margin-top:100px;
-	border-top: 1px solid #cccccc;
 	font-size:14px;
 }
-.templatemo-contact-map {
+.contact-map {
     margin-bottom: 15px;
     height: 378px;
 
@@ -439,15 +444,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	float: right;
 }
 
-.templatemo-partners {
+.partners {
 	border-top: 2px solid #cccccc;
 }
 
-.templatemo-partners .templatemo-partner-item {
+.partners .partner-item {
     margin-bottom: 5px;
 }
 
-.templatemo-footer {
+.footer {
 	border-top: 2px solid #cccccc;
 	margin-top: 100px;
 }
@@ -519,25 +524,25 @@ a:hover .social-icon-dribbble {
     background: url('../images/social-icon-dribbble-over.png') no-repeat;
 }
 
-ul.templatemo-project-gallery  li  a img:hover {
+ul.project-gallery  li  a img:hover {
     border: 3px solid #ff7600;
 }
 
-.templatemo-gallery-category a {
+.gallery-category a {
 	color:#333333;
 }
 
-.templatemo-gallery-category a.active {
+.gallery-category a.active {
 	color:#e67e22;
 	text-decoration:none;
 }
 
-.templatemo-gallery-category a:focus {
+.gallery-category a:focus {
 	color:#e67e22;
 	text-decoration:none;
 }
 
-.templatemo-gallery-category a:hover {
+.gallery-category a:hover {
 	color:#e67e22;
 	text-decoration:none;
 }
@@ -545,20 +550,20 @@ ul.templatemo-project-gallery  li  a img:hover {
 .link_orange:hover {
     text-decoration:none;
 }
-.templatemo-project-gallery {
+.project-gallery {
     margin:0 0 0 0;
     margin-top:30px;
     margin-left: -40px;
 }
-.templatemo-project-gallery li {
+.project-gallery li {
     list-style:none;
     margin-bottom:25px;
 }
-.templatemo-project-gallery li img {
+.project-gallery li img {
   cursor: pointer;
 }
 
-.templatemo-tweets {
+.tweets {
     background-color: #8996a0;
     min-height:200px;
     font-family:  'Open Sans', sans-serif;
@@ -576,31 +581,39 @@ ul.templatemo-project-gallery  li  a img:hover {
     box-shadow: none;
     font-style: italic;
 }
+.form-element-policy {
+    font-size: 11px;
+}
+
+label.policy-checkbox {
+    font-weight: 400;
+    text-align: left;
+}
 
 .btn_loadmore {
 	margin-top:30px;
 	margin-bottom:80px;
 }
 
-.blog_box {
+.reviews_box {
 	margin-left: -12px;
 }
 
 @media (min-width:991px) and (max-width:1200px) {
-    .templatemo-project-box, .project-overlay {
+    .project-box, .project-overlay {
         height:170px;
         width:170px;
     }
 
-    .templatemo-project-gallery {
+    .project-gallery {
         margin-left: -70px;
     }
 
-    .templatemo-service-item-header {
+    .service-item-header {
         padding: 16px 10px 20px;
     }
 
-    .templatemo-header-orange {
+    .header-orange {
         min-width: 230px;
     }
 
@@ -618,7 +631,7 @@ ul.templatemo-project-gallery  li  a img:hover {
         margin-bottom: 20px;
     }
 
-    .templatemo-btn-read-more {
+    .btn-read-more {
         float:right;
         margin-bottom :40px;
     }
@@ -627,19 +640,19 @@ ul.templatemo-project-gallery  li  a img:hover {
 
 @media (min-width:768px) and (max-width:990px) {
     .member-thumb .thumb-overlay {
-        padding-left: 30%;
+        padding-left: 5%;
     }
-    .templatemo-project-box , .project-overlay {
+    .project-box , .project-overlay {
        height:130px;
        width:130px;
        padding-top: 0px;
     }
 
-    .templatemo-project-gallery {
+    .project-gallery {
        margin-left: 10px;
     }
 
-    .blog_box{
+    .reviews_box{
        margin-right: -140px;
     }
 }
@@ -654,10 +667,10 @@ ul.templatemo-project-gallery  li  a img:hover {
 
 @media (max-width: 768px) {
     .member-thumb .thumb-overlay {
-        padding-left: 40%;
+        padding-left: 5%;
 
     }
-    .templatemo-btn-read-more {
+    .btn-read-more {
             float:right;
             margin-bottom :40px;
       }
@@ -668,12 +681,12 @@ ul.templatemo-project-gallery  li  a img:hover {
             padding-left: 30%;
 
     }
-	.templatemo-service-item-header {
+	.service-item-header {
 		font-size: 16px;
 
 		padding: 23px 10px 22px;
 	}
-	.templatemo-header-orange {
+	.header-orange {
 		min-width: 0px;
 	}
 
@@ -681,40 +694,40 @@ ul.templatemo-project-gallery  li  a img:hover {
 
 @media (min-width:991px) and (max-width: 1200px) {
 	 .team_hr {
-		width: 37%;
+		width: 40%;
 	}
 }
 
 @media (min-width:683px) and ( max-width: 991px) {
 	 .team_hr {
-		width: 33%;
+		width: 36%;
 	}
 }
 
 @media (min-width:585px) and ( max-width: 683px) {
         .member-thumb .thumb-overlay {
-            padding-left: 25%;
+            padding-left: 5%;
 
         }
 	 .team_hr {
-		width: 30%;
+		width: 34%;
 	}
 }
 
 @media (min-width:536px) and ( max-width: 585px) {
 	 .team_hr {
-		width: 28%;
+		width: 32%;
 	}
 }
 
 @media  (min-width:410px) and  ( max-width: 536px) {
 	 .team_hr {
-		width: 21%;
+		width: 26%;
 	}
 }
 
 @media  ( max-width: 410px) {
 	 .team_hr {
-		width: 11%;
+		width: 22%;
 	}
 }

@@ -6,19 +6,19 @@ jQuery(function($) {
 		
         $(document).ready( function() {
 
-        top_menu_height = $('.templatemo-top-menu').height();
+        top_menu_height = $('.top-menu').height();
         // scroll spy to auto active the nav item
-        $('body').scrollspy({ target: '#templatemo-nav-bar', offset: top_menu_height + 10 });
+        $('body').scrollspy({ target: '#nav-bar', offset: top_menu_height + 10 });
 		$('.external-link').unbind('click');
 
         // scroll to top
         $('#btn-back-to-top').click(function(e){
             e.preventDefault();
-            scrollTo('#templatemo-top');
+            scrollTo('#top');
         });
 
         // scroll to specific id when click on menu
-        $('.templatemo-top-menu .navbar-nav a').click(function(e){
+        $('.top-menu .navbar-nav a').click(function(e){
             e.preventDefault(); 
             var linkId = $(this).attr('href');
             scrollTo(linkId);
@@ -30,7 +30,7 @@ jQuery(function($) {
         });
 
         // to stick navbar on top
-        $('.templatemo-top-menu ').stickUp();
+        $('.top-menu ').stickUp();
 
     });
 });
