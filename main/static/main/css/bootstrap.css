@@ -329,6 +329,27 @@ a:focus {
   outline-offset: -2px;
 }
 
+.border {
+list-style: none;
+padding: 15px;
+}
+.border li {
+font-family: 'Open Sans', sans-serif;
+font-weight: bolder;
+padding: 10px 20px;
+margin-bottom: 15px;
+border-radius: 5px;
+border-left: 10px solid #f05d22;
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 16px;
+letter-spacing: 2px;
+transition: 0.3s all linear;
+}
+
+
 img {
   vertical-align: middle;
 }
@@ -599,7 +620,6 @@ ol ol {
 }
 
 .list-inline > li {
-  display: inline-block;
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -894,8 +914,7 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px 15px 15px;
 }
 
 .col-xs-1,
@@ -1876,8 +1895,7 @@ input[type="search"] {
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
+  margin: -3px 0 0;
   /* IE8-9 */
 
   line-height: normal;
@@ -2199,7 +2217,8 @@ textarea.input-lg {
 .form-horizontal .checkbox-inline {
   padding-top: 7px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  margin-right: 10px;
 }
 
 .form-horizontal .radio,
@@ -6392,6 +6411,7 @@ button.close {
 
 .pull-left {
   float: left !important;
+  margin-bottom: 10px;
 }
 
 .hide {

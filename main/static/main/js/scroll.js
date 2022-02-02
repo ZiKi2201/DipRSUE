@@ -8,7 +8,7 @@ jQuery(function($) {
 
         top_menu_height = $('.top-menu').height();
         // scroll spy to auto active the nav item
-        $('body').scrollspy({ target: '#nav-bar', offset: top_menu_height + 10 });
+        $('body').scrollspy({ target: '#nav-bar', offset: top_menu_height + 1.5 });
 		$('.external-link').unbind('click');
 
         // scroll to top
@@ -18,8 +18,8 @@ jQuery(function($) {
         });
 
         // scroll to specific id when click on menu
-        $('.top-menu .navbar-nav a').click(function(e){
-            e.preventDefault(); 
+        $('.top-menu .navbar-nav a, .row a').click(function(e){
+            e.preventDefault();
             var linkId = $(this).attr('href');
             scrollTo(linkId);
             if($('.navbar-toggle').is(":visible") == true){
@@ -28,6 +28,7 @@ jQuery(function($) {
             $(this).blur();
             return false;
         });
+
 
         // to stick navbar on top
         $('.top-menu ').stickUp();

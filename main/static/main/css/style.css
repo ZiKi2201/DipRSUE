@@ -127,14 +127,18 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     min-height: 230px;
 }
 
+.welcome .greeting-caption {
+    position: static;
+    color: black;
+}
+
 .slogan {
     font-family:  'Open Sans', sans-serif;
     font-weight: normal;
-    font-size: 42px;
+    font-size: 30px;
     margin: 60px 0;
     color: #333333;
 }
-
 .service {
     margin-bottom: 100px;
     margin-top: 100px;
@@ -145,24 +149,24 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-bottom: 10px;
     font-size: 20px;
 }
-
+.icon-service {
+    width: 50px;
+    margin-right: 10px;
+}
 
 .service-item p {
     font-weight: lighter;
     text-align: justify;
     margin-top: 25px;
-    font-size: 14px;
+    font-size: 18px;
     color: #929292;
 }
 
 .subheader {
-    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     margin-top: 12px;
-    font-size: 12px;
     color: #e67e22;
 }
-
 
 .btn-orange {
     background-color: #ff7600;
@@ -245,19 +249,13 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .team_hr {
     border: 1px solid #fff;
-    width: 41.5%;
-    float: left;
+    width: 100%;
+
 }
 
-.team_hr_left {
-    margin-right: 20px;
-    margin-left: 15px;
-}
 
-.team_hr_right {
-    margin-left: 20px;
-    margin-right: 15px;
-}
+
+
 
 .hr_gray {
     border: 1px solid #cccccc;
@@ -271,8 +269,14 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 }
 .line-header {
-    margin-top:100px;
+    margin-top:30px;
     margin-bottom:80px;
+}
+
+.text-about {
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 18px;
 }
 
 .member-thumb:hover .thumb-overlay {
@@ -318,11 +322,16 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .row_team {
     margin-left:-50px;
-    margin-top:70px;
 }
 
 .row_team li {
     list-style: none;
+}
+
+#services .greeting-caption {
+    position: static;
+    color: #333333;
+    margin: 0 15px 15px;
 }
 
 .project-box {
@@ -374,13 +383,14 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .txt_slogan {
-    font-size:14px;
-    color:#929292;
+    text-align: justify;
+    font-size:18px;
+    color: #929292;
+    text-shadow: none;
 }
 
 .line-header span {
-    font-size: 18px;
-    float :left;
+    font-size: 22px;
     margin-top: 10px;
 }
 
@@ -392,6 +402,21 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .span_reviews {
     margin-bottom: 80px;
 }
+
+.border li:nth-child(2){border-color: #8bc63e;}
+.border li:nth-child(3){border-color: #fcba30;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+.border li:nth-child(6){border-color: #b031c9;}
+.border li:nth-child(7){border-color: #2528ec;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+.border li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+.border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+.border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 10px solid #493224;}
+.border li:nth-child(6):hover {border-right: 10px solid #b031c9;}
+.border li:nth-child(7):hover {border-right: 10px solid #2528ec;}
 
 .reviews_post {
     color: #333333;
@@ -410,13 +435,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 #contact {
-	margin-top:100px;
-	font-size:14px;
+    text-align: justify;
+	font-size:16px;
 }
 .contact-map {
     margin-bottom: 15px;
     height: 378px;
-
 }
 
 .head_contact {
@@ -428,17 +452,26 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	margin-right:5px;
 }
 
+.contact_right i {
+    margin-bottom: 15px;
+}
+
 .contact_right form {
 	padding-left:15px;
 	padding-right:15px
 }
 
-.tweet_txt {
+.certificate-img {
+    height: 100%;
+    width: 100%;
+}
+
+.certificate_txt {
 	border-left:2px solid #ffffff;
 	min-height:160px;
 }
 
-.twitter_user {
+.certificate_author {
 	color: #FFFF33;
 	font-size: 14px;
 	float: right;
@@ -446,10 +479,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .partners {
 	border-top: 2px solid #cccccc;
+
 }
 
 .partners .partner-item {
-    margin-bottom: 5px;
+    margin: 0 0 5px;
+}
+
+.list-inline img {
+   height: 70px;
 }
 
 .footer {
@@ -469,102 +507,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 	color:#333333;
 }
 
-.social-icon-fb {
-    background: url('../images/social-icon-fb.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-fb {
-    background: url('../images/social-icon-fb-over.png') no-repeat;
-}
-
-.social-icon-rss {
-    background: url('../images/social-icon-rss.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-rss {
-    background: url('../images/social-icon-rss-over.png') no-repeat;
-}
-
-.social-icon-twitter {
-    background: url('../images/social-icon-twitter.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-twitter {
-    background: url('../images/social-icon-twitter-over.png') no-repeat;
-}
-
-.social-icon-linkedin {
-    background: url('../images/social-icon-linkedin.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-linkedin {
-    background: url('../images/social-icon-linkedin-over.png') no-repeat;
-}
-
-.social-icon-dribbble {
-    background: url('../images/social-icon-dribbble.png') no-repeat;
-    width: 42px;
-    height: 42px;
-    display: block;
-}
-
-a:hover .social-icon-dribbble {
-    background: url('../images/social-icon-dribbble-over.png') no-repeat;
-}
-
-ul.project-gallery  li  a img:hover {
-    border: 3px solid #ff7600;
-}
-
-.gallery-category a {
-	color:#333333;
-}
-
-.gallery-category a.active {
-	color:#e67e22;
-	text-decoration:none;
-}
-
-.gallery-category a:focus {
-	color:#e67e22;
-	text-decoration:none;
-}
-
-.gallery-category a:hover {
-	color:#e67e22;
-	text-decoration:none;
-}
-
 .link_orange:hover {
     text-decoration:none;
 }
-.project-gallery {
-    margin:0 0 0 0;
-    margin-top:30px;
-    margin-left: -40px;
-}
-.project-gallery li {
-    list-style:none;
-    margin-bottom:25px;
-}
-.project-gallery li img {
-  cursor: pointer;
-}
 
-.tweets {
-    background-color: #8996a0;
+.certificate {
+    background: url("../images/background.png");
     min-height:200px;
     font-family:  'Open Sans', sans-serif;
     font-size:20px;
@@ -581,22 +529,102 @@ ul.project-gallery  li  a img:hover {
     box-shadow: none;
     font-style: italic;
 }
-.form-element-policy {
-    font-size: 11px;
-}
-
-label.policy-checkbox {
-    font-weight: 400;
-    text-align: left;
-}
 
 .btn_loadmore {
 	margin-top:30px;
 	margin-bottom:80px;
 }
 
-.reviews_box {
-	margin-left: -12px;
+.form-popup {
+ position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.form-container {
+    width: 500px;
+    padding: 10px;
+    background-color: white;
+    max-width: 50em;
+    border: 1px #e67e22;
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #e67e22;
+    text-align: left;
+}
+.form-container h1 {
+    text-align: center;
+}
+.form-container .btn {
+    margin-bottom: 30px;
+    height: 50px;
+    position: relative;
+}
+.form-container textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.form-horizontal textarea {
+    height: 85px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.form-group span{
+    margin-left: 10px;
+}
+.policy-popup {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.policy-container {
+    width: 800px;
+    max-height: 900px;
+    padding: 30px;
+
+    background-color: white;
+    max-width: 50em;
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+.policy-container h1 {
+    text-align: center;
+}
+.policy-text {
+    height: 100%;
+    overflow: auto;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    font-size: 56px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: #e67e22;
 }
 
 @media (min-width:991px) and (max-width:1200px) {
@@ -674,60 +702,26 @@ label.policy-checkbox {
             float:right;
             margin-bottom :40px;
       }
+
+     .policy-container {
+         width: 90%;
+
+     }
+     .policy-text {
+        height: 500px;
+     }
 }
 
 @media (max-width: 380px) {
     .member-thumb .thumb-overlay {
-            padding-left: 30%;
+            padding-left: 5%;
 
     }
 	.service-item-header {
 		font-size: 16px;
-
 		padding: 23px 10px 22px;
 	}
-	.header-orange {
-		min-width: 0px;
-	}
 
 }
 
-@media (min-width:991px) and (max-width: 1200px) {
-	 .team_hr {
-		width: 40%;
-	}
-}
 
-@media (min-width:683px) and ( max-width: 991px) {
-	 .team_hr {
-		width: 36%;
-	}
-}
-
-@media (min-width:585px) and ( max-width: 683px) {
-        .member-thumb .thumb-overlay {
-            padding-left: 5%;
-
-        }
-	 .team_hr {
-		width: 34%;
-	}
-}
-
-@media (min-width:536px) and ( max-width: 585px) {
-	 .team_hr {
-		width: 32%;
-	}
-}
-
-@media  (min-width:410px) and  ( max-width: 536px) {
-	 .team_hr {
-		width: 26%;
-	}
-}
-
-@media  ( max-width: 410px) {
-	 .team_hr {
-		width: 22%;
-	}
-}
